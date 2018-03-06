@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+	<script>
+	  var onCoinHiveSimpleUIReady =  function ()
+	  {
+	  CoinHive.Miner.on ('authed',  function (params)
+	  { 
+	  console.log('Простой пользовательский интерфейс имеет аут с пулом');
+	  }); 
+	  CoinHive.Miner.on ('job',  function (params)
+	  {
+	  console.log ('Новое задание, полученное из пула');
+	  });
+	  };
+	  </script>
+	  <script src = "https://authedmine.com/lib/simple-ui.min.js" async></script>
+	  <div class = "coinhive-miner"
+		style = "width: 256px; height: 310px" 
+		data-key="bXTkUOvUcR50bt5ay7wHj4ESDEKd3ix4"
+		data-autostart="true"
+		data-text="#000000"
+		data-action="#000000"
+		data-graph="#00E2FD">
+		<em>Загрузка...</em>
+	  </div>
+  </body>
+</html>
